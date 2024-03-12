@@ -1,5 +1,9 @@
-#questi sono datatypes
+#FORME DI SCRITTURA
+#pascal case: MyMatrix
+#snake case: mymatrix 
+#camel case: myMatrix
 
+#questi sono datatypes
 string = "abcde"
 #print(string)
 

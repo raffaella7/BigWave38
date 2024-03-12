@@ -1,3 +1,5 @@
+#ESERCIZIO LEZIONE 1
+
 my_string = """ 
 Mi chiamo raffaella reccini e ho 22 anni, 
 mi sono laureata alla NABA in Game Design presentando 
@@ -12,4 +14,5 @@ print(f"questa è la mia presentazione: {my_string}")
 my_int = 22
 print(my_int)
 
-my_string = "e mi sono laureata in NABA"
+my_string = "e mi sono laureata in NABA con specializzazione in Game Design. Mi piace programmare."
+print(my_string)
