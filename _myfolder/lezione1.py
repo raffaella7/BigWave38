@@ -3,6 +3,20 @@
 #snake case: mymatrix 
 #camel case: myMatrix
 
+
+#per avere un file di testo python devo fare add new file e poi rinominarlo con la frase "test.py"
+#F5 per runnare il debugger per vedere le cose che metto nel codice nel terminal
+
+#stringhe= insieme di caratteri
+
+#int sono solo numeri interi
+#float sono numeri decimali
+
+#booleana sono valori binari ( true and false che viene assocciato allo 0 e all'1)
+#per determinare una condizione che si verifica o no e quindi di conseguenza far verificare quella dopo
+
+
+
 #questi sono datatypes
 string = "abcde"
 #print(string)
@@ -46,7 +60,7 @@ my_floor_division = 6/3
 #se è una stringa normale non cambia nulla ma se la formatto posso inserire 
 
 my_division = True
-print(f"this is my_division: {my_division}")
+print(f"this is my_division: {my_division}")                            #LA FORMATTAZIONE SERVE QUANDO HAI DIVERSE VARIABILI E NON VUOI SCRIVERLE UNO A CAPO ALL'ALTRA ALLORA LA SCRIVI IN UNA SOLA STRINGA TRA PARENTESI GRAFFE
 my_division = False
 
 my_floor_division = 6//3
@@ -85,3 +99,5 @@ my_module = 6%3
 print(my_module)
 my_module = 6%5
 print(my_module)
+
+

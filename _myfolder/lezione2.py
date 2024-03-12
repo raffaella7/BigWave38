@@ -126,7 +126,7 @@ while n == 1:
 #gli abbiamo impostato la condizione di fine
     
 num = True
-while num = True:           #questo andrà avanti all'infinito invece a meno che non metta la condiziine di BREAK ovvero num = False
+while num == True:           #questo andrà avanti all'infinito invece a meno che non metta la condiziine di BREAK ovvero num = False
     print("1")
     num = False
 
@@ -167,5 +167,7 @@ gravita = {
 }
 
 if quest in gravita:
-    print(mass*gravita[quest])                          #quando uso il dizionario devo fare così perchè gli sto dicendo di cercare la risposta che ha dato all'input all'interno di esso e metterla a confrontro con le altre chiavi
-                                                        #deve essere scritto per forza così
+    print(f"la pallina di massa {mass}kg dentro il pianeta {quest} ha un peso pari ha {mass*gravita[quest]}")
+
+#quando uso il dizionario devo fare così perchè gli sto dicendo di cercare la risposta che ha dato all'input all'interno di esso e metterla a confrontro con le altre chiavi (mass*gravita[quest])
+#deve essere scritto per forza così.)
