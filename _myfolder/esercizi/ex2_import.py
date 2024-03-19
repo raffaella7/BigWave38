@@ -1,5 +1,5 @@
 #ESERCIZIO IMPORTAZIONE ESEGUIBILE
 
-import esercitazione
+import esercizi.ex1 as ex1
 
-esercitazione.main()
+ex1.main()

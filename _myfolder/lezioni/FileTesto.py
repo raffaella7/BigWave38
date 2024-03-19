@@ -22,7 +22,7 @@ new_file.close()
 
 #se voglio leggerlo
 new_file = open("new_file.txt", "r")
-print(file_text)
+print(new_file)
 new_file.close()
 #restituisce una lista con ogni elemento che corrisponde a tutte le linee di testo
 
