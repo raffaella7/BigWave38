@@ -121,7 +121,7 @@ while n == 1:
     print("1")
     n = 2           #questa condizione mi deve restituire ture e quindi si ferma il ciclo, si blocca per la condizione ritorna a false
 
-#quando si verifica la condizione in cui la nostra vvraiabilen 
+#quando si verifica la condizione in cui la nostra variabile 
 #è uguale a uno si verifica il ciclo while invece se il valore cambia si blocca da solo perchè
 #gli abbiamo impostato la condizione di fine
     
@@ -171,3 +171,5 @@ if quest in gravita:
 
 #quando uso il dizionario devo fare così perchè gli sto dicendo di cercare la risposta che ha dato all'input all'interno di esso e metterla a confrontro con le altre chiavi (mass*gravita[quest])
 #deve essere scritto per forza così.)
+    
+    

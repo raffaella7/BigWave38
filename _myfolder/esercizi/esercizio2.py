@@ -95,7 +95,6 @@ elif my_int_3 > my_int_1 and my_int_2:
        print("my_int_3")
 
 
-
 #ESERCIZIO Scrivi un programma che chieda tre numeri a, b, c all'utente e mostri il più grande tra loro.
     
 my_int_1 = int(input("Insert first number :"))
@@ -122,4 +121,4 @@ my_list = [5, 10, my_string, 67, 22]
 for car in my_list:
     if my_list[3] >= car:
             max_car = my_list[3]
-print(max_car)                          #se non avessi scritto questo fuori dal ciclo for mi avrebbe dato come risultato 5 volte il 67 perchè lo sta comparando con tutti i numeri della lista
+print(max_car)                                      #se non avessi scritto questo fuori dal ciclo for mi avrebbe dato come risultato 5 volte il 67 perchè lo sta comparando con tutti i numeri della lista
