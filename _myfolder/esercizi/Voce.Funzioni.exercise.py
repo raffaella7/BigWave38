@@ -30,7 +30,10 @@ def ReadText():
 
 def hourResponse():
     #now.strftime("%m")
-    print(f"siamo a {datetime.month()}")
+    hour = (f"siamo a {datetime.now().strftime("%B")}")
+    print(hour)
+    engine.say(hour)
+    engine.runAndWait()
 
 def casualResponse():
     answer = choice(["non lo so", "non ho capito", "non mi sono informata"])
@@ -57,7 +60,7 @@ while True:
         casualResponse()
     elif any(word in text for word in ["mese", "month"]):
         hourResponse()
-    elif text.startswith("cerca"):                      #QUA GLI DICO CHE DEVO SCRIVERE PER FORZA CERCA SE LO LA FUNZIONE DI PRIMA NON FUNZIONA
+    elif text.startswith("cerca"):                                   #QUA GLI DICO CHE DEVO SCRIVERE PER FORZA CERCA SE LO LA FUNZIONE DI PRIMA NON FUNZIONA
         webSearch(text)
     elif "esci" in text:
         risposta = "ciao"
