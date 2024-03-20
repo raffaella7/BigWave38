@@ -7,7 +7,7 @@ r = Recognizer()                    #quando abbiamo bisogno di utilizzare nello 
 mic = Microphone()
 r.pause_threshold = 0.8
 
-"""
+
 
 with mic as source:                     #è possibile dare un alias ad una variabile
                                         #mic è una classe 
@@ -22,7 +22,7 @@ with mic as source:                     #è possibile dare un alias ad una varia
 #la classe è un progetto:contenitori di metodi (funzioni) o attributi (variabili)
 #per istanziare una classe la chiami (come quando richiamo le funzioni)
 
-"""
+
 with mic as source:
     r.adjust_for_ambient_noise(source)
     audio = r.listen(source, timeout = 5)                  #in questo caso ascolta per 20 secondi e dopo smette di ascoltare
