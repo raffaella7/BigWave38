@@ -3,6 +3,15 @@ engine = pyttsx3.init()
 voices = engine.getProperty("voices")      
 engine.setProperty("voice", voices[0].id)
 
+from speech_recognition import Microphone, Recognizer
+
+
+r = Recognizer()                   
+mic = Microphone()
+r.pause_threshold = 0.8
+r.energy_threshold = 50
+r.phrase_threshold = 0.1
+
 from random import choice 
 import webbrowser
 from datetime import datetime
@@ -53,17 +62,31 @@ WriteText()
 AppendText()
 
 while True:
-    text = input("sono pronta, chiedimi pure\n")
-    if "istruzioni" in text:
-        ReadText()
-    elif text.startswith(("cosa", "come", "quanto")):
-        casualResponse()
-    elif any(word in text for word in ["mese", "month"]):
-        hourResponse()
-    elif text.startswith("cerca"):                                   #QUA GLI DICO CHE DEVO SCRIVERE PER FORZA CERCA SE LO LA FUNZIONE DI PRIMA NON FUNZIONA
-        webSearch(text)
-    elif "esci" in text:
-        risposta = "ciao"
-        break
-    else:
-        risposta = "non so cosa dirti"
+    with mic as source:
+        r.adjust_for_ambient_noise(source)
+        audio = r.listen(source, timeout = 10, phrase_time_limit=5)                 
+        stt = r.recognize_google(audio, language = "it-IT")
+        print(stt)
+
+
+
+#while True:
+
+        
+        if "istruzioni" in stt:
+            ReadText()
+                
+        elif stt.startswith(("cosa", "come", "quanto")):
+            casualResponse()
+                
+        elif any(word in stt for word in ["mese", "month"]):
+            hourResponse()
+                
+        elif stt.startswith("Cerca"):                                   #QUA GLI DICO CHE DEVO SCRIVERE PER FORZA CERCA SE LO LA FUNZIONE DI PRIMA NON FUNZIONA
+            webSearch(stt)
+                
+        elif "esci" in stt:
+            print("ciao")
+            break
+        else:
+            print("non so cosa dirti")
